@@ -1,0 +1,45 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/paladin-core",
+    "crates/paladin-data",
+    "crates/paladin-ai",
+    "crates/paladin-cli",
+    "crates/paladin-gui",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Red Rook, LLC"]
+license = "Proprietary"
+repository = "https://github.com/plyght/Paladin"
+
+[workspace.dependencies]
+anyhow = "1"
+thiserror = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream", "gzip", "brotli", "rustls-tls"] }
+futures = "0.3"
+futures-util = "0.3"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2"
+clap = { version = "4", features = ["derive", "cargo"] }
+clap_complete = "4"
+indicatif = "0.17"
+console = "0.15"
+inquire = "0.7"
+directories = "5"
+yahoo_finance_api = "4"
+time = { version = "0.3", features = ["macros"] }
+bytes = "1"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
