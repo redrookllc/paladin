@@ -2,9 +2,9 @@
 
 <div align="center">
 
-# <img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.5.1/svgs/solid/shield-halved.svg" width="28" height="28" alt="Paladin" /> Paladin
+<img src="../PALADIN/DATABASE/Paladin_Icon.png" width="120" height="120" alt="Paladin" style="margin-top: 10px;" />
 
-**Trading Intelligence Application**
+**Paladin**
 
 *Desktop market analytics and signal generation for institutional-style workflows*
 
@@ -117,7 +117,7 @@ Baseline market data uses **yfinance**; no API key is required for standard Yaho
 
 ## <img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.5.1/svgs/solid/scale-balanced.svg" width="20" height="20" alt="" /> License
 
-© 2026 **Red Rook, LLC.** All rights reserved.
+© 2025 **Red Rook, LLC.** All rights reserved.
 
 ---
 
